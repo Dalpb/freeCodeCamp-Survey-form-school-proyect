@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Dalpb"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;500&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Formulario encuesta</title>
+    </head>
+    <body>
+        <img src="assets/top-circle.svg" alt="top-circle" />
+        <img src="assets/bottom-circle.svg" alt="bottom-circle"/>
+        <main class="container">
+            <h1 id="title" class="main__title">Encuesta Del Colegio</h1>
+            <p id="description" class="main__description">Agradecemos que responda esta pequeña encuesta, para mejorar nuestro centro educativo en los próximos años.</p>
+            <form id="survey-form" action="#">
+              <fieldset class="informacion-estudiante">
+                <label for="name" id="name-label">
+                    Nombre Completo
+                    <input type="text" id="name" placeholder=" Ingrese nombre completo" class="input_text" required/>
+                </label>
+                <label for="email" id="email-label">
+                    Correo electrónico
+                    <input type="email" id="email" placeholder=" Ingrese su correo personal" class="input_text" required/>
+                </label>
+                <label for="dropdown" id="grade-label" >
+                    Seleccione su grado escolar
+                    <select id="dropdown"name="grado-escolar" class="input_drop">
+                        <option value="">(Seleccione uno)</option>
+                        <optgroup label="Primaria">
+                            <option value="1">Primer grado</option>
+                            <option value="2">Segundo grado</option>
+                            <option value="3">Tercer grado</option>
+                            <option value="4">Cuarto grado</option>
+                            <option value="5">Quinto grado</option>
+                            <option value="6">Sexto grado</option>
+                        </optgroup>
+                        <optgroup label="Secundaria">
+                            <option value="7">Septimo grado</option>
+                            <option value="8">Octavo grado</option>
+                            <option value="9">Noveno grado</option>
+                            <option value="10">Decimo grado</option>
+                            <option value="11">Undecimo grado</option>
+                        </optgroup>
+                    </select>
+                </label>
+                <label for="number" id="number-label">Edad
+                    <input type="number" id="number" placeholder= " Edad" max="17" min="7"/>
+                </label>
+              </fieldset>
+              <div class="separate-line"></div>
+              <fieldset>
+                  <p>Indique qué tan satisfecho está con los métodos de enseñanza de nuestros profesores:</p>
+                  <label for="high-satisfied">
+                      <input type="radio" name="satisfied-level" value="alto" id="high-satisfied" /> Muy satisfecho
+                    </label>
+                    <label for="normal-satisfied">
+                        <input type="radio" name="satisfied-level" value="normal" id="normal-satisfied" /> Satisfecho
+                    </label>
+                    <label for="low-satified">
+                        <input type="radio" name="satisfied-level" value="bajo" id="low-satified"/> Poco satisfecho
+                    </label>
+                    <label for="any-statified">
+                        <input type="radio" name="satisfied-level" value="nada" id="any-statified" /> Para nada satisfecho
+                    </label>
+              </fieldset>
+              <fieldset>
+                  <p>¿Cuál de los siguientes cursos te gusta más ?</p>
+                  <label>
+                    <input type="checkbox" value="matemáticas" name="important-subjects"/> Matemáticas
+                  </label>
+                  <label>
+                    <input type="checkbox" value="Física" name="important-subjects"/> Física
+                  </label>
+                  <label>
+                    <input type="checkbox" value="Química" name="important-subjects"/> Química
+                  </label>
+                  <label>
+                    <input type="checkbox" value="Ingles" name="important-subjects"/> Ingles
+                  </label>
+                  <label>
+                    <input type="checkbox" value="Redacción" name="important-subjects"/> Redacción
+                  </label>
+                  <label>
+                    <input type="checkbox" value="Historia universal" name="important-subjects" /> Historia universal
+                  </label>
+                  <label> 
+                    <input type="checkbox" value="Biología" name="important-subjects"/> Biología
+                  </label>
+                  <label>
+                    <input type="checkbox" value="Arte" name="important-subjects"/> Arte
+                  </label>
+                  <label>
+                    <input type="checkbox" value="Música" name="important-subjects" /> Música
+                  </label>
+                  <label>
+                    <input type="checkbox" value="Educación física" name="important-subjects"/> Educación física
+                  </label>
+              </fieldset>
+              <fieldset>
+                <p>¿Crees que las enseñanzas de estos cursos te serán útiles en un futuro?</p>
+                <label>
+                    <input type="radio" name="subjects-ussefull" value="sí" /> Sí
+                </label>
+                <label>
+                    <input type="radio" name="subjects-ussefull" value="no" /> No
+                </label>
+              </fieldset>
+              <fieldset>
+                <p>Estamos implementado más actividades extraescolares, Indique en cuáles está interesado:</p>
+                <label>
+                    <input type="checkbox" name="new-activitives" value="programación"/> Programación
+                </label>
+                <label>
+                    <input type="checkbox" name="new-activitives" value="Danza"> Danza 
+                </label>
+                <label>
+                    <input type="checkbox" name="new-activitives" value="Artes marciales" /> Artes marciales
+                </label>
+                <label>
+                    <input type="checkbox" name="new-activitives" value="Carpinteria"/> Carpinteria
+                </label>
+                <label>
+                    <input type="checkbox" name="new-activitives" value="Animacion" /> Animación
+                </label>
+                <label>
+                    <input type="checkbox" name="new-activitives" value="Natación"/> Natación
+                </label>
+                <label>
+                    <input type="checkbox" name="new-activitives" value="Cocina"/> Cocina
+                </label>
+                <label>
+                    <input type="checkbox" name="new-activitives" value="Basketball"/> Basketball
+                </label>
+                <label>
+                    <input type="checkbox" name="new-activitives" value="Futbol"/> Futbol
+                </label>
+              </fieldset> 
+              <div class="separate-line"></div>
+
+              <fieldset>
+                <label for="student-suggestions">
+                    Redacte alguna sugerencia <span class="opcional">(opcional)</span>
+                <textarea name="Suggestions" id="student-suggestions" cols="30" rows="10" placeholder="Me gustaria indicar..."></textarea>
+                </label>
+              </fieldset>
+              <input type="submit" id="submit" value="Enviar" />
+            </form>
+        </main>
+    </body>
+</html>
